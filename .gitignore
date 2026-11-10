@@ -1,0 +1,23 @@
+# Virtual environment & Python cache
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Large raw archives & token caches (not needed by web_app.py at runtime)
+data_new/*.zip
+data_new/*.parquet
+data_new/Ransomware.csv
+data_new/Benign.csv
+data/
+
+# Heavy KNN matrices (57 MB each, not used by web_app.py live inference)
+experiments/models/knn_*.joblib
+experiments/models/*.pt
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
